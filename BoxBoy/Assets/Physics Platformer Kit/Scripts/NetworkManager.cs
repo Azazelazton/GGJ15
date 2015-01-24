@@ -6,7 +6,7 @@ public class NetworkManager : MonoBehaviour {
 	public delegate void SpawnMyPlayerHandler( GameObject myPlayer );
 	public static event SpawnMyPlayerHandler SpawnedMyPlayer;
 	
-	private string version = "v001";
+	private string version = "vp";
 	
 	public string playerPrefabName = "Player";
 	public Transform[] spawnPoints;
