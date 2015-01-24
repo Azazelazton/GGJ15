@@ -5,8 +5,13 @@ public class StepAnim : MonoBehaviour {
     GameObject step, pillar;
     [SerializeField]
     StepAnim[] stairway; // Only have to set this at the first step;
+<<<<<<< HEAD
     public float height = 0.2f;
     public float yVel = 1;
+=======
+    public float height = 0.3f;
+    public float yVel = 0.5f;
+>>>>>>> origin/master
 
     public int stepNr = 0;
     bool started = false;
@@ -43,8 +48,17 @@ public class StepAnim : MonoBehaviour {
    
     public IEnumerator animate()
     {
+<<<<<<< HEAD
         float desiredHeight = step.transform.position.y + height * stepNr+height;
         while (step.transform.position.y < desiredHeight)
+=======
+        float desiredHeight = (step.transform.position.y + height);
+        desiredHeight *= 0.02f;
+        desiredHeight += stepNr*height;
+        desiredHeight += height;
+        float yHeight = 0;
+        while (yHeight < desiredHeight)
+>>>>>>> origin/master
         {
             Vector3[] pillarCorners = pillar.GetComponent<MeshFilter>().mesh.vertices;
             float highestY = float.MinValue;
@@ -63,7 +77,20 @@ public class StepAnim : MonoBehaviour {
             pillar.GetComponent<MeshFilter>().mesh.vertices = pillarCorners;
             pillar.GetComponent<MeshFilter>().mesh.RecalculateBounds();
 
+<<<<<<< HEAD
             step.transform.position += new Vector3(0, yVel*Time.deltaTime, 0);
+=======
+            Vector3[] stepCorners = step.GetComponent<MeshFilter>().mesh.vertices;
+            for (int h = 0; h < stepCorners.Length; h++)
+            {
+                stepCorners[h] += new Vector3(0, yVel * Time.deltaTime, 0);
+            }
+
+            step.GetComponent<MeshFilter>().mesh.vertices = stepCorners;
+            step.GetComponent<MeshFilter>().mesh.RecalculateBounds();
+
+            yHeight += yVel * Time.deltaTime;
+>>>>>>> origin/master
 
             yield return new WaitForEndOfFrame();
         }
