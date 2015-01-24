@@ -259,6 +259,7 @@ public class PlayerMove : Photon.MonoBehaviour
 	}
 
 	public void jump (float jumpHeight) {
+		this.jumpForce = new Vector3(0, jumpHeight, 0);
 		isJumpButtonDown = true;
 	}
 	

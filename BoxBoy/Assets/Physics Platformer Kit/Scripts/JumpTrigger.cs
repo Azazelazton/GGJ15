@@ -6,10 +6,11 @@ public class JumpTrigger : MonoBehaviour {
 	float jumpHeight = 5;
 
 	// Use this for initialization
-	void OnTriggerEnter (Collider collider) {
+	void OnTriggerStay (Collider collider) {
 		PlayerMove controller = collider.GetComponent<PlayerMove> ();
 		if (controller != null) {
-			if (true) {		//TODO check for moving toward object
+			Debug.Log(Vector3.Dot(-transform.forward, controller.rigidbody.velocity));
+			if (Vector3.Dot(transform.forward, controller.rigidbody.velocity) > 0.25f) {		//TODO check for moving toward object
 				controller.jump (jumpHeight);
 			}
 		}
