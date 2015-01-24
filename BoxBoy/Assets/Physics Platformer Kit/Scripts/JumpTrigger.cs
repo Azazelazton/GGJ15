@@ -10,7 +10,7 @@ public class JumpTrigger : MonoBehaviour {
 		PlayerMove controller = collider.GetComponent<PlayerMove> ();
 		if (controller != null) {
 			Debug.Log(Vector3.Dot(-transform.forward, controller.rigidbody.velocity));
-			if (Vector3.Dot(transform.forward, controller.rigidbody.velocity) > 1) {		//TODO check for moving toward object
+			if (Vector3.Dot(-transform.forward, controller.rigidbody.velocity) > 0.4f) {		//TODO check for moving toward object
 				controller.jump (jumpHeight);
 			}
 		}
