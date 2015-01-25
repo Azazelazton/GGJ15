@@ -5,9 +5,9 @@ using System.Collections;
 public class AnimationLock : ButtonLocked {
 	Animator animator;
 	protected override void Awake () {
-		base.Awake ();
-
 		animator = GetComponent<Animator> ();
+		
+		base.Awake ();
 	}
 
 	protected override void activate () {
