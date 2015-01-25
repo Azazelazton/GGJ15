@@ -142,6 +142,9 @@ public class PlayerMove : Photon.MonoBehaviour
 			stream.SendNext(direction);
 
 			stream.SendNext(moveDirection);
+            stream.SendNext(rigidbody.velocity.y);
+            if (photonView.isMine)
+                stream.SendNext(transform.position.y);
 		}
 		else
 		{
@@ -152,6 +155,13 @@ public class PlayerMove : Photon.MonoBehaviour
 			direction = (Vector3) stream.ReceiveNext();
 
 			moveDirection = (Vector3) stream.ReceiveNext();
+            rigidbody.velocity = new Vector3(rigidbody.velocity.x,(float)stream.ReceiveNext(), rigidbody.velocity.z);
+            if(!photonView.isMine)
+            {
+                float y = (float)stream.ReceiveNext();
+                if (y != transform.position.y)
+                    transform.position = new Vector3(transform.position.x,y, transform.position.z);
+            }
 		}
 	}
 	
@@ -247,12 +257,12 @@ public class PlayerMove : Photon.MonoBehaviour
 				//increment our jump type if we haven't been on the ground for long
 				onJump = (groundedCount < jumpDelay) ? Mathf.Min(2, onJump + 1) : 0;
 				//execute the correct jump (like in mario64, jumping 3 times quickly will do higher jumps)
-				if (onJump == 0)
+				//if (onJump == 0)
 						Jump (jumpForce);
-				else if (onJump == 1)
-						Jump (secondJumpForce);
-				else if (onJump == 2)
-						Jump (thirdJumpForce);
+				//else if (onJump == 1)
+				//		Jump (secondJumpForce);
+				//else if (onJump == 2)
+				//		Jump (thirdJumpForce);
 			}
 		}
 		isJumpButtonDown = false;
