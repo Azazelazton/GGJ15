@@ -29,6 +29,7 @@ public abstract class ButtonLocked : MonoBehaviour {
 
 	bool isActivated = false;
 	void buttonPressed () {
+		Debug.Log ("BUTTONpRESS");
 		bool allButtonsAreActivated = true;
 		foreach(BoxButton button in buttons)
 		if (!button.activated) {
@@ -44,6 +45,7 @@ public abstract class ButtonLocked : MonoBehaviour {
 	}
 	
 	void buttonReleased () {
+		Debug.Log ("BUTTONrELEASE");
 		if (isActivated) {
 			isActivated = false;
 

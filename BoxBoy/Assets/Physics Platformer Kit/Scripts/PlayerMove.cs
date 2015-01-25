@@ -108,7 +108,6 @@ public class PlayerMove : Photon.MonoBehaviour
                 h = Input.GetAxisRaw("HorizontalController");
                 v = Input.GetAxisRaw("VerticalController");
             }
-            Debug.Log(h + " , " + v);
 			//only apply vertical input to movemement, if player is not sidescroller
 			if(!sidescroller)
 				direction = (screenMovementForward * v) + (screenMovementRight * h);
