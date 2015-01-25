@@ -2,23 +2,31 @@
 using System.Collections;
 
 public class LevelEnd : MonoBehaviour {
-	int numberOfPlayersInCollider = 0;
+	bool blueEntered = false;
+	bool redEntered = false;
 
 	void OnTriggerEnter (Collider other) {
-		if (other.gameObject.layer == LayerMask.NameToLayer("RedPlayer") || other.gameObject.layer == LayerMask.NameToLayer("BluePlayer")) {
-			numberOfPlayersInCollider++;
+		if (other.gameObject.layer == LayerMask.NameToLayer ("RedPlayer"))
+			redEntered = true;
+		else if (other.gameObject.layer == LayerMask.NameToLayer ("BluePlayer")) 
+			blueEntered = true;
 
-			if (numberOfPlayersInCollider >= 2) 
-				loadNextLevel ();
-		}
+		if (blueEntered && redEntered) 
+			loadNextLevel ();
 	}
 
 	void OnTriggerExit (Collider other) {
-		if (other.gameObject.layer == LayerMask.NameToLayer ("RedPlayer") || other.gameObject.layer == LayerMask.NameToLayer ("BluePlayer")) 
-			numberOfPlayersInCollider--;
+		if (other.gameObject.layer == LayerMask.NameToLayer ("RedPlayer"))
+			redEntered = false;
+		else if (other.gameObject.layer == LayerMask.NameToLayer ("BluePlayer")) 
+			blueEntered = false;
 	}
 
 	void loadNextLevel () {
-		Application.LoadLevel (Application.loadedLevel + 1);
+		int nextLevel = Application.loadedLevel + 1;
+		if (nextLevel > Application.levelCount)
+			nextLevel = 0;
+
+		Application.LoadLevel (nextLevel);
 	}
 }
