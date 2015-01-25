@@ -46,7 +46,7 @@ public class PlayerMove : Photon.MonoBehaviour
 	private DealDamage dealDamage;
 
 	bool isJumpButtonDown;
-
+    
     public bool useController;
 
 	//setup
