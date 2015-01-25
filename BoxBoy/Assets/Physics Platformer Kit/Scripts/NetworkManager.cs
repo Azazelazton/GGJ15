@@ -6,9 +6,10 @@ public class NetworkManager : MonoBehaviour {
 	public delegate void SpawnMyPlayerHandler( GameObject myPlayer );
 	public static event SpawnMyPlayerHandler SpawnedMyPlayer;
 	
-	public string version = "v 1";
+	public string version = "v 11";
 	
 	public string playerPrefabName = "Player";
+
 	public Transform[] spawnPoints;
 
 	public static NetworkManager instance;
@@ -18,9 +19,26 @@ public class NetworkManager : MonoBehaviour {
 			instance = this;
 			init ();
 		} else if (instance != this) {
-			SpawnMyPlayer(instance.gameObject.layer);
+			changeSpawnPositions ();
+
+			instance.startNextLevel (1.2f);
 			Destroy(gameObject);
 		}
+	}
+
+	void changeSpawnPositions () {
+		for (int i = 0; i < spawnPoints.Length; i++) {
+			instance.spawnPoints[i].position = spawnPoints[i].position;
+			instance.spawnPoints[i].rotation = spawnPoints[i].rotation;
+		}
+	}
+
+	void startNextLevel (float delay) {
+		Invoke ("startNextLevel", delay);
+	}
+	
+	void startNextLevel () {
+		SpawnMyPlayer (gameObject.layer);
 	}
 
 	void init () {
