@@ -3,7 +3,7 @@ using System.Collections;
 
 public class JumpTrigger : MonoBehaviour {
 	[SerializeField]
-	float jumpHeight = 5;
+	float jumpHeight = 2.5F;
 
 	// Use this for initialization
 	void OnTriggerStay (Collider collider) {
