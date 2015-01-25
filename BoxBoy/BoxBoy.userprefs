@@ -1,14 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Physics Platformer Kit\Scripts\SyncRigidbody.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Button\BoxButton.cs">
     <Files>
       <File FileName="Assets\Button\BoxButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Physics Platformer Kit\Scripts\ButtonLocked.cs" Line="58" Column="1" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\ButtonLocked.cs" Line="60" Column="1" />
       <File FileName="Assets\Physics Platformer Kit\Scripts\NetworkManager.cs" Line="32" Column="62" />
       <File FileName="Assets\StairCast.cs" Line="23" Column="62" />
-      <File FileName="Assets\Physics Platformer Kit\Scripts\SyncRigidbody.cs" Line="33" Column="49" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\SyncRigidbody.cs" Line="39" Column="1" />
       <File FileName="Assets\Physics Platformer Kit\Scripts\JumpTrigger.cs" Line="18" Column="1" />
       <File FileName="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonClasses.cs" Line="991" Column="1" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\LockedStairs.cs" Line="13" Column="39" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\PlayerMove.cs" Line="296" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -8,6 +8,11 @@ public class BoxButton : MonoBehaviour {
 	public event EventHandler Pushed;
 	public event EventHandler Released;
 
+	[SerializeField]
+	Material redPressedColor
+		, bluePressedColor;
+	Material color;
+
 	PhotonView photonView;
 
 	bool isMine {
@@ -40,8 +45,8 @@ public class BoxButton : MonoBehaviour {
 		this.activated = true;
 		GetComponent<AudioController>().PlayClip(0);
 		
-		StopCoroutine(MoveUp());
-		StartCoroutine(MoveDown());
+		//StopCoroutine(MoveUp());
+		//StartCoroutine(MoveDown());
 		
 		if (Pushed != null) 
 			Pushed ();
@@ -51,7 +56,7 @@ public class BoxButton : MonoBehaviour {
 		activated = false;
 		GetComponent<AudioController>().PlayClip(0);
 		
-		StartCoroutine(MoveUp());
+		//StartCoroutine(MoveUp());
 		
 		if (Released != null) 
 			Released ();
