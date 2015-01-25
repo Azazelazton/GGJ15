@@ -30,8 +30,20 @@ public class BoxButton : MonoBehaviour {
         string myLayerName = LayerMask.LayerToName(gameObject.layer);
         if (layerName.Substring(0, 3) == myLayerName.Substring(0, 3) && ableToMove && collision.transform.tag != "Button")
         {
-			StopCoroutine(MoveUp(collision));
-			StartCoroutine(MoveDown(collision));
+			
+			if (!objectsAbove.Contains(collision.gameObject)) {
+				objectsAbove.Add(collision.gameObject);
+				
+				if (!activated && objectsAbove.Count == 1){
+					this.activated = true;
+					
+					StopCoroutine(MoveUp(collision));
+					StartCoroutine(MoveDown(collision));
+
+					if (Pushed != null) 
+						Pushed ();
+				}
+			}
         }
     }
 
@@ -40,24 +52,25 @@ public class BoxButton : MonoBehaviour {
         string layerName = LayerMask.LayerToName(collision.gameObject.layer);
         string myLayerName = LayerMask.LayerToName(gameObject.layer);
         if (layerName.Substring(0, 3) == myLayerName.Substring(0, 3) && ableToMove)
-        {
-            StartCoroutine(MoveUp(collision));
+		{
+			if (objectsAbove.Contains(collision.gameObject)) {
+				objectsAbove.Remove(collision.gameObject);
+				
+				if (objectsAbove.Count == 0 && activated) {
+					activated = false;
+					
+					StartCoroutine(MoveUp(collision));
+
+					if (Released != null) 
+						Released ();
+				}
+			}
         }
     }
 
 
 	IEnumerator MoveDown(Collision collision)
 	{
-		if (!objectsAbove.Contains(collision.gameObject)) {
-			objectsAbove.Add(collision.gameObject);
-
-			if (!activated && objectsAbove.Count == 1){
-				this.activated = true;
-				if (Pushed != null) 
-					Pushed ();
-			}
-		}
-
         ableToMove = false;
         while (transform.parent.position.y > startPos.y - 0.064f)
         {
@@ -70,16 +83,6 @@ public class BoxButton : MonoBehaviour {
     }
 	IEnumerator MoveUp(Collision collision)
 	{
-		if (objectsAbove.Contains(collision.gameObject)) {
-			objectsAbove.Remove(collision.gameObject);
-
-			if (objectsAbove.Count == 0 && activated) {
-				activated = false;
-				if (Released != null) 
-					Released ();
-			}
-		}
-
         ableToMove = false;
         while (transform.parent.position.y < startPos.y)
         {
