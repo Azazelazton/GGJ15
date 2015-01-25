@@ -133,7 +133,6 @@
      <Compile Include="Assets\Physics Platformer Kit\Scripts\TriggerParent.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Water.cs" />
      <Compile Include="Assets\Stair\StepAnim.cs" />
-     <Compile Include="Assets\StairCast.cs" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
