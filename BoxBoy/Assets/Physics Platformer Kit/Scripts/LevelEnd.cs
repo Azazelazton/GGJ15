@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class LevelEnd : MonoBehaviour {
+	int levelCount = 4;
+
 	bool blueEntered = false;
 	bool redEntered = false;
 
@@ -23,10 +25,11 @@ public class LevelEnd : MonoBehaviour {
 	}
 
 	void loadNextLevel () {
-		int nextLevel = Application.loadedLevel + 1;
-		if (nextLevel > Application.levelCount)
+		int currentLevelID = int.Parse (Application.loadedLevelName.Remove (0, 6));
+		int nextLevel = currentLevelID + 1;
+		if (currentLevelID >= levelCount)
 			nextLevel = 0;
 
-		Application.LoadLevel (nextLevel);
+		Application.LoadLevel ("Level "+nextLevel);
 	}
 }

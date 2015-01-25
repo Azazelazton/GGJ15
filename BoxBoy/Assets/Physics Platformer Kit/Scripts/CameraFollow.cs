@@ -99,7 +99,7 @@ public class CameraFollow : MonoBehaviour
             {
                 float axisX = Input.GetAxis("Mouse X Controller") * inputRotationSpeed * Time.deltaTime*0.5f;
                 followTarget.RotateAround(target.position, Vector3.up, axisX);
-                float axisY = Input.GetAxis("Mouse Y Controller") * inputRotationSpeed * Time.deltaTime*0.5f;
+                float axisY = Input.GetAxis("Mouse Y Controller") * inputRotationSpeed * Time.deltaTime*0.16f;
                 followTarget.RotateAround(target.position, transform.right, -axisY);
             }
             else
