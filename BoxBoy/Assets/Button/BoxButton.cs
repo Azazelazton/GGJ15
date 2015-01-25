@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class BoxButton : MonoBehaviour {
+	public delegate void EventHandler();
+	public event EventHandler Pushed;
+	public event EventHandler Released;
 
     Vector3 startPos;
     Vector3 myPos;
@@ -41,7 +44,13 @@ public class BoxButton : MonoBehaviour {
 
 
     IEnumerator MoveDown()
-    {
+	{
+		if (!activated){
+			this.activated = true;
+			if (Pushed != null) 
+				Pushed ();
+		}
+
         ableToMove = false;
         while (transform.parent.position.y > startPos.y - 0.064f)
         {
@@ -49,12 +58,17 @@ public class BoxButton : MonoBehaviour {
             transform.position = myPos;
             yield return new WaitForEndOfFrame();
         }
-        transform.parent.position = new Vector3(transform.parent.position.x, startPos.y - 0.1f, transform.parent.position.z);
-        activated = true;
+		transform.parent.position = new Vector3(transform.parent.position.x, startPos.y - 0.1f, transform.parent.position.z);
         ableToMove = true;
     }
     IEnumerator MoveUp()
-    {
+	{
+		if (activated) {
+			activated = false;
+			if (Released != null) 
+				Released ();
+		}
+
         ableToMove = false;
         while (transform.parent.position.y < startPos.y)
         {
@@ -63,7 +77,6 @@ public class BoxButton : MonoBehaviour {
             yield return new WaitForEndOfFrame();
         }
         transform.parent.position = new Vector3(transform.parent.position.x, startPos.y, transform.parent.position.z);
-        activated = false;
         ableToMove = true;
     }
 }

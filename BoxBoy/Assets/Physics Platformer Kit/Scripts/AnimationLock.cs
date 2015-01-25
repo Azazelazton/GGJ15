@@ -5,8 +5,6 @@ using System.Collections;
 public class AnimationLock : MonoBehaviour {
 	Animator animator;
 
-	int activatedButtons;
-
 	[SerializeField]
 	BoxButton[] buttons = new BoxButton[0];
 
@@ -14,33 +12,34 @@ public class AnimationLock : MonoBehaviour {
 	void Awake () {
 		animator = GetComponent<Animator> ();
 
-		activatedButtons = 0;
-
 		for (int i = 0; i < buttons.Length; i++) {
-			//buttons[i].EVENT1 += buttonPressed;
-			//buttons[i].EVENT2 += buttonReleased;
+			buttons[i].Pushed += buttonPressed;
+			buttons[i].Released += buttonReleased;
 		}
 	}
 
 	void OnDestroy() {
 		for (int i = 0; i < buttons.Length; i++) {
 			if (buttons[i] != null) {
-				//buttons[i].EVENT1 -= buttonPressed;
-				//buttons[i].EVENT2 -= buttonReleased;
+				buttons[i].Pushed -= buttonPressed;
+				buttons[i].Released -= buttonReleased;
 			}
 		}
 	}
 
 	void buttonPressed () {
-		activatedButtons++;
+		bool allButtonsAreActivated = true;
+		foreach(BoxButton button in buttons)
+			if (!button.activated) {
+				allButtonsAreActivated = false;
+				break;
+			}
 
-		if (activatedButtons == buttons.Length)
+		if (allButtonsAreActivated)
 			activate();
 	}
 	
-	void buttonReleased () {
-		activatedButtons--;
-
+	void buttonReleased () {		
 		deactivate ();
 	}
 	
