@@ -48,22 +48,16 @@ public class BoxButton : MonoBehaviour {
 
 	IEnumerator MoveDown(Collision collision)
 	{
-<<<<<<< HEAD
-		if (!activated){
-            this.activated = true;
-            GetComponent<AudioController>().PlayClip(0);
-			if (Pushed != null) 
-				Pushed ();
-=======
+
 		if (!objectsAbove.Contains(collision.gameObject)) {
 			objectsAbove.Add(collision.gameObject);
 
 			if (!activated && objectsAbove.Count == 1){
 				this.activated = true;
+            GetComponent<AudioController>().PlayClip(0);
 				if (Pushed != null) 
 					Pushed ();
 			}
->>>>>>> origin/master
 		}
 
         ableToMove = false;
@@ -78,22 +72,16 @@ public class BoxButton : MonoBehaviour {
     }
 	IEnumerator MoveUp(Collision collision)
 	{
-<<<<<<< HEAD
-		if (activated) {
-			activated = false;
-            GetComponent<AudioController>().PlayClip(0);
-			if (Released != null) 
-				Released ();
-=======
+
 		if (objectsAbove.Contains(collision.gameObject)) {
 			objectsAbove.Remove(collision.gameObject);
 
 			if (objectsAbove.Count == 0 && activated) {
 				activated = false;
+            GetComponent<AudioController>().PlayClip(0);
 				if (Released != null) 
 					Released ();
 			}
->>>>>>> origin/master
 		}
 
         ableToMove = false;
