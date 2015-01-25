@@ -34,10 +34,7 @@ public class BoxButton : MonoBehaviour {
 			StartCoroutine(MoveDown(collision));
         }
     }
-    void OnCollisionStay(Collision collision)
-    {
-        OnCollisionEnter(collision);
-    }
+
     void OnCollisionExit(Collision collision)
     {
         string layerName = LayerMask.LayerToName(collision.gameObject.layer);
