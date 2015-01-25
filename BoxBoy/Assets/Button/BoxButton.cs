@@ -51,13 +51,14 @@ public class BoxButton : MonoBehaviour {
 
 	IEnumerator MoveDown(Collision collision)
 	{
-		if (!objectsAbove.Contains(collision.gameObject)) 
+		if (!objectsAbove.Contains(collision.gameObject)) {
 			objectsAbove.Add(collision.gameObject);
 
-		if (!activated && objectsAbove.Count == 1){
-			this.activated = true;
-			if (Pushed != null) 
-				Pushed ();
+			if (!activated && objectsAbove.Count == 1){
+				this.activated = true;
+				if (Pushed != null) 
+					Pushed ();
+			}
 		}
 
         ableToMove = false;
