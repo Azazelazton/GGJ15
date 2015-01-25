@@ -17,30 +17,12 @@ Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.082 seconds
+- Completed reload, in  0.062 seconds
 desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\System.dll (this message is harmless)
-NullReferenceException: Object reference not set to an instance of an object
-  at ButtonLocked.Awake () [0x00000] in <filename unknown>:0 
-  at LockedStairs.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ButtonLocked.Awake () [0x00000] in <filename unknown>:0 
-  at LockedStairs.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ButtonLocked.Awake () [0x00000] in <filename unknown>:0 
-  at LockedStairs.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
 Connect
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
