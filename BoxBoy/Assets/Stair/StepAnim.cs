@@ -19,14 +19,7 @@ public class StepAnim : MonoBehaviour {
 		
 		//if (stepNr == 0)
 	}
-	void Update()
-	{
-		if (!started)
-		{
-			started = true;
-			StartCoroutine(animate());
-		}
-	}
+
 	void GetItems()
 	{
 		foreach (Transform obj in transform.GetComponentInChildren<Transform>())
@@ -40,9 +33,13 @@ public class StepAnim : MonoBehaviour {
 		
 	}
 	
-	
 	public IEnumerator animate()
 	{
+		if(stepNr == 0)
+			foreach (StepAnim ani in stairway)
+				if(ani != this)
+					StartCoroutine (ani.animate ());
+
 		float desiredHeight = (step.transform.position.y + height);
 		desiredHeight *= 0.02f;
 		desiredHeight += stepNr*height;
@@ -86,6 +83,54 @@ public class StepAnim : MonoBehaviour {
 			
 			yield return new WaitForEndOfFrame();
 		}		
+	}
+	public IEnumerator deanimate()
+	{
+		if(stepNr == 0)
+			foreach (StepAnim ani in stairway)
+				if(ani != this)
+					StartCoroutine (ani.deanimate ());
+
+		float desiredHeight = (step.transform.position.y + height);
+		desiredHeight *= 0.02f;
+		desiredHeight += stepNr*height;
+		desiredHeight += height;
+		float yHeight = 0;
+		while (yHeight < desiredHeight)
+		{
+			Vector3[] pillarCorners = pillar.GetComponent<MeshFilter>().mesh.vertices;
+			float highestY = float.MinValue;
+			foreach (Vector3 vertex in pillarCorners)
+			{
+				if (vertex.y > highestY) highestY = vertex.y;
+			}
+			for (int k = 0; k < pillarCorners.Length; k++)
+			{
+				Vector3 vertex = pillarCorners[k];
+				if (vertex.y == highestY)
+				{
+					pillarCorners[k] += new Vector3(0,- yVel * Time.deltaTime, 0);
+				}
+			}
+			pillar.GetComponent<MeshFilter>().mesh.vertices = pillarCorners;
+			pillar.GetComponent<MeshFilter>().mesh.RecalculateBounds();
+			
+			Vector3[] stepCorners = step.GetComponent<MeshFilter>().mesh.vertices;
+			for (int h = 0; h < stepCorners.Length; h++)
+			{
+				stepCorners[h] += new Vector3(0, -yVel * Time.deltaTime, 0);
+			}
+			
+			step.GetComponent<MeshFilter>().mesh.vertices = stepCorners;
+			step.GetComponent<MeshFilter>().mesh.RecalculateBounds();
+			
+			yHeight += yVel * Time.deltaTime;
+			
+			yield return new WaitForEndOfFrame();
+		}
+		//if (stairway.Length >= (stepNr + 1))
+		//    StartCoroutine(stairway[stepNr++].animate());
+		
 	}
 	
 	public void getStepNr()

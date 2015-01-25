@@ -9,9 +9,11 @@ public class SyncLayer : MonoBehaviour {
 	void Start() {
 		PhotonView photonView = GetComponent<PhotonView>();
 
+		setLayer (gameObject.layer);
+
 		bool isMine = photonView.isSceneView ? PhotonNetwork.isMasterClient : photonView.isMine;
 		if (isMine)
-			photonView.RPC ("setLayer", PhotonTargets.AllBuffered, gameObject.layer);
+			photonView.RPC ("setLayer", PhotonTargets.OthersBuffered, gameObject.layer);
 	}
 
 	[RPC]
