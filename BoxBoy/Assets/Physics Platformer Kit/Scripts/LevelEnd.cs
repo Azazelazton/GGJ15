@@ -19,6 +19,10 @@ public class LevelEnd : MonoBehaviour {
 	}
 
 	void loadNextLevel () {
-		Application.LoadLevel (Application.loadedLevel + 1);
+		int nextLevel = Application.loadedLevel + 1;
+		if (nextLevel > Application.levelCount)
+			nextLevel = 0;
+
+		Application.LoadLevel (nextLevel);
 	}
 }
