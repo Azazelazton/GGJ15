@@ -63,7 +63,7 @@ public class StepAnim : MonoBehaviour {
 			}
 			pillar.GetComponent<MeshFilter>().mesh.vertices = pillarCorners;
             pillar.GetComponent<MeshFilter>().mesh.RecalculateBounds();
-            DestroyImmediate(pillar.GetComponent<BoxCollider>());
+            Destroy(pillar.GetComponent<BoxCollider>());
             pillar.AddComponent<BoxCollider>();
 
 			Vector3[] stepCorners = step.GetComponent<MeshFilter>().mesh.vertices;
@@ -74,7 +74,7 @@ public class StepAnim : MonoBehaviour {
 			
 			step.GetComponent<MeshFilter>().mesh.vertices = stepCorners;
             step.GetComponent<MeshFilter>().mesh.RecalculateBounds();
-            DestroyImmediate(step.GetComponent<BoxCollider>());
+            Destroy(step.GetComponent<BoxCollider>());
             step.AddComponent<BoxCollider>();
 
 
