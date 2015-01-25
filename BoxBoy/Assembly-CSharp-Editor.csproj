@@ -82,11 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-<<<<<<< HEAD
       <Project>{581A218B-F7D4-C3BD-51CF-CA307F93F9D0}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-=======
-      <Project>{581A218B-F7D4-C3BD-51CF-CA307F93F9D0}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
->>>>>>> origin/master
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{3C60BC40-CCE1-336C-F2DD-AFE40CF2FE98}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
