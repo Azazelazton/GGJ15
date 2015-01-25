@@ -35,7 +35,8 @@ public abstract class ButtonLocked : MonoBehaviour {
 			}
 		}
 	}
-	
+
+	bool isActivated = false;
 	void buttonPressed () {
 		bool allButtonsAreActivated = true;
 		foreach(BoxButton button in buttons)
@@ -44,13 +45,20 @@ public abstract class ButtonLocked : MonoBehaviour {
 			break;
 		}
 		
-		if (allButtonsAreActivated && isMine)
+		if (allButtonsAreActivated && isMine && !isActivated) {
+			isActivated = true;
+
 			photonView.RPC ("activateRPC", PhotonTargets.AllBuffered);
+		}
 	}
 	
 	void buttonReleased () {
-		if (isMine)
+		if (isMine && isActivated) {
+			isActivated = false;
+
 			photonView.RPC ("deactivateRPC", PhotonTargets.AllBuffered);
+
+		}
 	}
 
 	[RPC]
