@@ -65,8 +65,10 @@ public class StepAnim : MonoBehaviour {
 				}
 			}
 			pillar.GetComponent<MeshFilter>().mesh.vertices = pillarCorners;
-			pillar.GetComponent<MeshFilter>().mesh.RecalculateBounds();
-			
+            pillar.GetComponent<MeshFilter>().mesh.RecalculateBounds();
+            DestroyImmediate(pillar.GetComponent<BoxCollider>());
+            pillar.AddComponent<BoxCollider>();
+
 			Vector3[] stepCorners = step.GetComponent<MeshFilter>().mesh.vertices;
 			for (int h = 0; h < stepCorners.Length; h++)
 			{
@@ -74,15 +76,16 @@ public class StepAnim : MonoBehaviour {
 			}
 			
 			step.GetComponent<MeshFilter>().mesh.vertices = stepCorners;
-			step.GetComponent<MeshFilter>().mesh.RecalculateBounds();
-			
+            step.GetComponent<MeshFilter>().mesh.RecalculateBounds();
+            DestroyImmediate(step.GetComponent<BoxCollider>());
+            step.AddComponent<BoxCollider>();
+
+
+
 			yHeight += yVel * Time.deltaTime;
 			
 			yield return new WaitForEndOfFrame();
-		}
-		//if (stairway.Length >= (stepNr + 1))
-		//    StartCoroutine(stairway[stepNr++].animate());
-		
+		}		
 	}
 	
 	public void getStepNr()
