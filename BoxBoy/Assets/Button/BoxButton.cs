@@ -46,7 +46,8 @@ public class BoxButton : MonoBehaviour {
     IEnumerator MoveDown()
 	{
 		if (!activated){
-			this.activated = true;
+            this.activated = true;
+            GetComponent<AudioController>().PlayClip(0);
 			if (Pushed != null) 
 				Pushed ();
 		}
@@ -65,6 +66,7 @@ public class BoxButton : MonoBehaviour {
 	{
 		if (activated) {
 			activated = false;
+            GetComponent<AudioController>().PlayClip(0);
 			if (Released != null) 
 				Released ();
 		}
