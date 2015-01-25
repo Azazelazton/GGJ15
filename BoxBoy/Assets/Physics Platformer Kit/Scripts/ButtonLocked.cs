@@ -3,20 +3,11 @@ using System.Collections;
 
 [RequireComponent( typeof( PhotonView ) )]
 public abstract class ButtonLocked : MonoBehaviour {	
-	PhotonView photonView;
-
-	bool isMine {
-		get {
-			return LayerMask.LayerToName(NetworkManager.instance.gameObject.layer).Substring(0, 3) != LayerMask.LayerToName(gameObject.layer).Substring(0, 3);
-		}
-	}
-
 	[SerializeField]
 	BoxButton[] buttons = new BoxButton[0];
 	
 	// Use this for initialization
 	protected virtual void Awake () {	
-		photonView = GetComponent<PhotonView> ();
 
 		for (int i = 0; i < buttons.Length; i++) {
 			buttons[i].Pushed += buttonPressed;
@@ -45,30 +36,20 @@ public abstract class ButtonLocked : MonoBehaviour {
 			break;
 		}
 		
-		if (allButtonsAreActivated && isMine && !isActivated) {
+		if (allButtonsAreActivated && !isActivated) {
 			isActivated = true;
 
-			photonView.RPC ("activateRPC", PhotonTargets.AllBuffered);
+			activate ();
 		}
 	}
 	
 	void buttonReleased () {
-		if (isMine && isActivated) {
+		if (isActivated) {
 			isActivated = false;
 
-			photonView.RPC ("deactivateRPC", PhotonTargets.AllBuffered);
+			deactivate ();
 
 		}
-	}
-
-	[RPC]
-	protected void activateRPC() {
-		activate ();
-	}
-	
-	[RPC]
-	protected void deactivateRPC() {
-		deactivate ();
 	}
 	
 	protected abstract void activate ();
