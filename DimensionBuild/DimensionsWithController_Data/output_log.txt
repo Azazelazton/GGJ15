@@ -1,0 +1,164 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4411]
+    Renderer: NVIDIA GeForce GT 750M   
+    Vendor:   NVIDIA
+    VRAM:     3072 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.048 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at SyncLayer.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 4.939621 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 114 unused Assets to reduce memory usage. Loaded Objects now: 537.
+Total: 1.173323 ms (FindLiveObjects: 0.051318 ms CreateObjectMapping: 0.024259 ms MarkObjects: 0.348031 ms  DeleteObjects: 0.320972 ms)
+
+Connect
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnJoinedLobby
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnPhotonRandomJoinFailed
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnJoinedRoom
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4411]
+    Renderer: NVIDIA GeForce GT 750M   
+    Vendor:   NVIDIA
+    VRAM:     3072 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.090 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4411]
+    Renderer: NVIDIA GeForce GT 750M   
+    Vendor:   NVIDIA
+    VRAM:     3072 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.119 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at SyncLayer.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Patrick\Desktop\DimensionBuild\DimensionsWithController_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at SyncLayer.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 7.711277 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 114 unused Assets to reduce memory usage. Loaded Objects now: 537.
+Total: 1.347805 ms (FindLiveObjects: 0.070446 ms CreateObjectMapping: 0.021926 ms MarkObjects: 0.285983 ms  DeleteObjects: 0.431073 ms)
+
+Connect
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnJoinedLobby
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnPhotonRandomJoinFailed
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 9.322206 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 114 unused Assets to reduce memory usage. Loaded Objects now: 537.
+Total: 2.517863 ms (FindLiveObjects: 0.138559 ms CreateObjectMapping: 0.074178 ms MarkObjects: 0.751580 ms  DeleteObjects: 0.955920 ms)
+
+OnJoinedRoom
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Connect
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnJoinedLobby
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnJoinedRoom
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
