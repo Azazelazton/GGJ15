@@ -1,0 +1,278 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4411]
+    Renderer: NVIDIA GeForce GT 750M   
+    Vendor:   NVIDIA
+    VRAM:     3072 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.044 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Patrick\Desktop\GGJ15\GGJ15-2\GGJ15\BoxBoy\Build\DimensionsWithController_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at SyncLayer.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 3.509706 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 112 unused Assets to reduce memory usage. Loaded Objects now: 537.
+Total: 0.816894 ms (FindLiveObjects: 0.021460 ms CreateObjectMapping: 0.010730 ms MarkObjects: 0.216936 ms  DeleteObjects: 0.234664 ms)
+
+Connect
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnJoinedLobby
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnJoinedRoom
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.591801 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 677.
+Total: 0.631215 ms (FindLiveObjects: 0.019594 ms CreateObjectMapping: 0.012129 ms MarkObjects: 0.259390 ms  DeleteObjects: 0.013062 ms)
+
+Received OnSerialization for view ID 1001. We have no such PhotonView! Ignored this if you're leaving a room. State: Joined
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Received OnSerialization for view ID 1001. We have no such PhotonView! Ignored this if you're leaving a room. State: Joined
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Received OnSerialization for view ID 1001. We have no such PhotonView! Ignored this if you're leaving a room. State: Joined
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Received OnSerialization for view ID 1001. We have no such PhotonView! Ignored this if you're leaving a room. State: Joined
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Received RPC "setLayer" for viewID 4 but this PhotonView does not exist! Was remote PV. Remote called. By: 1 Maybe GO was destroyed but RPC not cleaned up.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+PhotonView with ID 3 has no method "setLayer" marked with the [RPC](C#) or @RPC(JS) property! Args: Int32
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.813628 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at ButtonLocked.Awake () [0x00000] in <filename unknown>:0 
+  at LockedStairs.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1113.
+Total: 0.670870 ms (FindLiveObjects: 0.032190 ms CreateObjectMapping: 0.014928 ms MarkObjects: 0.271054 ms  DeleteObjects: 0.023793 ms)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+PhotonView with ID 7 has no method "setLayer" marked with the [RPC](C#) or @RPC(JS) property! Args: Int32
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.776546 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1107.
+Total: 0.715657 ms (FindLiveObjects: 0.031724 ms CreateObjectMapping: 0.018194 ms MarkObjects: 0.258457 ms  DeleteObjects: 0.032657 ms)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONrELEASE
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+BUTTONpRESS
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Level 'Level 4' (-1) couldn't be loaded because it has not been added to the build settings.
+To add a level to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 275)
+
+Level 'Level 4' (-1) couldn't be loaded because it has not been added to the build settings.
+To add a level to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 275)
+

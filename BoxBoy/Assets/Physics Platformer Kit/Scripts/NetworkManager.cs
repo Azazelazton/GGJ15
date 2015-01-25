@@ -15,6 +15,7 @@ public class NetworkManager : MonoBehaviour {
 	public static NetworkManager instance;
 
 	void Start () {
+        version = PlayerPrefs.GetString("Version");
 		if (instance == null) {
 			instance = this;
 			init ();
