@@ -11,6 +11,9 @@ public abstract class ButtonLocked : MonoBehaviour {
 			buttons[i].Pushed += buttonPressed;
 			buttons[i].Released += buttonReleased;
 		}
+
+		if (buttons.Length == 0)
+			activate ();
 	}
 	
 	void OnDestroy() {

@@ -4,10 +4,10 @@ using System.Collections;
 public class LockedStairs : ButtonLocked {
 	StepAnim anim;
 
-	protected override void Awake () {
-		base.Awake ();
-		
+	protected override void Awake () {		
 		anim = GetComponent<StepAnim> ();
+		
+		base.Awake ();
 	}
 	
 	protected override void activate () {
