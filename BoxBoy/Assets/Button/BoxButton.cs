@@ -36,6 +36,7 @@ public class BoxButton : MonoBehaviour {
 				
 				if (!activated && objectsAbove.Count == 1){
 					this.activated = true;
+					GetComponent<AudioController>().PlayClip(0);
 					
 					StopCoroutine(MoveUp(collision));
 					StartCoroutine(MoveDown(collision));
@@ -58,6 +59,7 @@ public class BoxButton : MonoBehaviour {
 				
 				if (objectsAbove.Count == 0 && activated) {
 					activated = false;
+					GetComponent<AudioController>().PlayClip(0);
 					
 					StartCoroutine(MoveUp(collision));
 
@@ -71,8 +73,6 @@ public class BoxButton : MonoBehaviour {
 
 	IEnumerator MoveDown(Collision collision)
 	{
-		GetComponent<AudioController>().PlayClip(0);
-
         ableToMove = false;
         while (transform.parent.position.y > startPos.y - 0.064f)
         {
