@@ -17,7 +17,7 @@ Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.064 seconds
+- Completed reload, in  0.049 seconds
 desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -39,13 +39,17 @@ SpawnMyPlayer
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 2.589010 ms
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+UnloadTime: 2.908467 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 596.
-Total: 1.033209 ms (FindLiveObjects: 0.035922 ms CreateObjectMapping: 0.014967 ms MarkObjects: 0.280112 ms  DeleteObjects: 0.071418 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 594.
+Total: 1.325296 ms (FindLiveObjects: 0.034212 ms CreateObjectMapping: 0.017106 ms MarkObjects: 0.314752 ms  DeleteObjects: 0.082537 ms)
 
-SpawnMyPlayer
+Connect
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Connect() can't be called if peer is not Disconnected. Not connecting. peerConnectionState: Connected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
