@@ -13,7 +13,7 @@ public abstract class ButtonLocked : MonoBehaviour {
 		}
 
 		if (buttons.Length == 0)
-			activate ();
+			Invoke("activate", 0.5f);
 	}
 	
 	void OnDestroy() {
