@@ -18,10 +18,10 @@ public class StairCast : MonoBehaviour {
         
 	}
 
-    void OnTriggerEnter(Collider col)
+    void OnTriggerStay(Collider col)
     {
-        if (col.transform.tag == "Stair")
-        Jump();
+		if (col.transform.tag == "Stair" && Mathf.Sign (controller.rigidbody.velocity.y) < 0.01f)
+        	Jump();
     }
 
     void Jump(){
