@@ -22,7 +22,7 @@ public class BoxButton : MonoBehaviour {
     {
         string layerName = LayerMask.LayerToName(collision.gameObject.layer);
         string myLayerName = LayerMask.LayerToName(gameObject.layer);
-        if (layerName.Substring(0, 3) == myLayerName.Substring(0, 3) && ableToMove)
+        if (layerName.Substring(0, 3) == myLayerName.Substring(0, 3) && ableToMove && collision.transform.tag != "Button")
         {
             StopCoroutine(MoveUp());
             StartCoroutine(MoveDown());

@@ -109,6 +109,7 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Misc\DemoTextFade.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\AnimationLock.cs" />
+     <Compile Include="Assets\Physics Platformer Kit\Scripts\ButtonLocked.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\CharacterMotor.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Checkpoint.cs" />
@@ -121,6 +122,7 @@
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Hazard.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Health.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\JumpTrigger.cs" />
+     <Compile Include="Assets\Physics Platformer Kit\Scripts\LockedStairs.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\MoveToPoints.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\NetworkManager.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\PlayerMove.cs" />
