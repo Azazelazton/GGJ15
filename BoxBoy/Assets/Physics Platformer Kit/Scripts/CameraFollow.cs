@@ -15,7 +15,7 @@ public class CameraFollow : MonoBehaviour
 	private Transform followTarget;
 	private bool camColliding;
 	private LayerMask layerMask;
-	
+    public bool useController;
 	//setup objects
 	void Awake()
 	{
@@ -95,10 +95,20 @@ public class CameraFollow : MonoBehaviour
 		if(mouseFreelook)
 		{
 			//mouse look
-			float axisX = Input.GetAxis ("Mouse X") * inputRotationSpeed * Time.deltaTime;
-			followTarget.RotateAround (target.position,Vector3.up, axisX);
-			float axisY = Input.GetAxis ("Mouse Y") * inputRotationSpeed * Time.deltaTime;
-			followTarget.RotateAround (target.position, transform.right, -axisY);
+            if (useController)
+            {
+                float axisX = Input.GetAxis("Mouse X Controller") * inputRotationSpeed * Time.deltaTime*0.5f;
+                followTarget.RotateAround(target.position, Vector3.up, axisX);
+                float axisY = Input.GetAxis("Mouse Y Controller") * inputRotationSpeed * Time.deltaTime*0.5f;
+                followTarget.RotateAround(target.position, transform.right, -axisY);
+            }
+            else
+            {
+                float axisX = Input.GetAxis("Mouse X") * inputRotationSpeed * Time.deltaTime;
+                followTarget.RotateAround(target.position, Vector3.up, axisX);
+                float axisY = Input.GetAxis("Mouse Y") * inputRotationSpeed * Time.deltaTime;
+                followTarget.RotateAround(target.position, transform.right, -axisY);
+            }
 		}
 		else
 		{

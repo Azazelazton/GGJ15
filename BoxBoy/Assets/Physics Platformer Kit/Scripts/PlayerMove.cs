@@ -46,7 +46,9 @@ public class PlayerMove : Photon.MonoBehaviour
 	private DealDamage dealDamage;
 
 	bool isJumpButtonDown;
-	
+
+    public bool useController;
+
 	//setup
 	void Awake()
 	{
@@ -98,9 +100,15 @@ public class PlayerMove : Photon.MonoBehaviour
 			screenMovementRight = screenMovementSpace * Vector3.right;
 			
 			//get movement input, set direction to move in
+            
 			float h = Input.GetAxisRaw ("Horizontal");
-			float v = Input.GetAxisRaw ("Vertical");
-			
+            float v = Input.GetAxisRaw("Vertical");
+            if (useController)
+            {
+                h = Input.GetAxisRaw("HorizontalController");
+                v = Input.GetAxisRaw("VerticalController");
+            }
+            Debug.Log(h + " , " + v);
 			//only apply vertical input to movemement, if player is not sidescroller
 			if(!sidescroller)
 				direction = (screenMovementForward * v) + (screenMovementRight * h);
