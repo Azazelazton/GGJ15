@@ -11,7 +11,7 @@ public class BoxButton : MonoBehaviour {
 	[SerializeField]
 	Material redPressedColor
 		, bluePressedColor;
-	Material color;
+	Material origonalColor;
 
 	PhotonView photonView;
 
@@ -30,6 +30,10 @@ public class BoxButton : MonoBehaviour {
 
 	List<GameObject> objectsAbove;
 
+	void Awake () {
+		NetworkManager.SpawnedMyPlayer += onPlayerSpawn;
+	}
+
     void Start()
     {
 		photonView = GetComponent<PhotonView> ();
@@ -40,11 +44,28 @@ public class BoxButton : MonoBehaviour {
 		objectsAbove = new List<GameObject> ();
     }
 
+	void OnDestroy () {
+		NetworkManager.SpawnedMyPlayer -= onPlayerSpawn;
+	}
+
+	void onPlayerSpawn (GameObject player) {
+		Renderer[] renderers = transform.parent.parent.GetComponentsInChildren<Renderer>();
+		origonalColor = renderers[0].material;
+	}
+
+	void setColor (Material color) {
+		Renderer[] renderers = transform.parent.parent.GetComponentsInChildren<Renderer>();
+		for (int i = 0; i < renderers.Length; i++)
+			renderers[i].material = color;
+	}
+
 	[RPC]
 	void open () {
 		this.activated = true;
 		GetComponent<AudioController>().PlayClip(0);
-		
+
+		setColor (LayerMask.LayerToName(gameObject.layer).Substring(0, 3) == "Red"? redPressedColor: bluePressedColor);
+
 		//StopCoroutine(MoveUp());
 		//StartCoroutine(MoveDown());
 		
@@ -55,6 +76,8 @@ public class BoxButton : MonoBehaviour {
 	void close () {
 		activated = false;
 		GetComponent<AudioController>().PlayClip(0);
+		
+		setColor (origonalColor);
 		
 		//StartCoroutine(MoveUp());
 		
