@@ -18,6 +18,7 @@ public class NetworkManager : MonoBehaviour {
 			instance = this;
 			init ();
 		} else if (instance != this) {
+			SpawnMyPlayer(instance.gameObject.layer);
 			Destroy(gameObject);
 		}
 	}
