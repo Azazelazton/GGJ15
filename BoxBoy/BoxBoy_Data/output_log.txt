@@ -17,12 +17,18 @@ Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.046 seconds
+- Completed reload, in  0.060 seconds
 desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at ButtonLocked.Awake () [0x00000] in <filename unknown>:0 
+  at LockedStairs.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 Connect
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
@@ -38,53 +44,6 @@ OnPhotonRandomJoinFailed
 OnJoinedRoom
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-SpawnMyPlayer
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 2.547955 ms
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 665.
-Total: 1.218383 ms (FindLiveObjects: 0.033356 ms CreateObjectMapping: 0.014540 ms MarkObjects: 0.396434 ms  DeleteObjects: 0.018389 ms)
-
-UnloadTime: 0.727865 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 661.
-Total: 0.856588 ms (FindLiveObjects: 0.027369 ms CreateObjectMapping: 0.014112 ms MarkObjects: 0.269421 ms  DeleteObjects: 0.004276 ms)
-
-SpawnMyPlayer
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 1.045611 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1093.
-Total: 0.990871 ms (FindLiveObjects: 0.050890 ms CreateObjectMapping: 0.020954 ms MarkObjects: 0.311758 ms  DeleteObjects: 0.038061 ms)
-
-Exception: cannot serialize(): UnityEngine.Rigidbody
-  at ExitGames.Client.Photon.Protocol.Serialize (System.IO.MemoryStream dout, System.Object serObject, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.SerializeObjectArray (System.IO.MemoryStream dout, System.Object[] objects, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.Serialize (System.IO.MemoryStream dout, System.Object serObject, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.SerializeHashTable (System.IO.MemoryStream dout, ExitGames.Client.Photon.Hashtable serObject, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.Serialize (System.IO.MemoryStream dout, System.Object serObject, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.SerializeHashTable (System.IO.MemoryStream dout, ExitGames.Client.Photon.Hashtable serObject, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.Serialize (System.IO.MemoryStream dout, System.Object serObject, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.SerializeParameterTable (System.IO.MemoryStream memStream, System.Collections.Generic.Dictionary`2 parameters) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.Protocol.SerializeOperationRequest (System.IO.MemoryStream memStream, Byte operationCode, System.Collections.Generic.Dictionary`2 parameters, Boolean setType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.EnetPeer.SerializeOperationToMessage (Byte opc, System.Collections.Generic.Dictionary`2 parameters, EgMessageType messageType, Boolean encrypt) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.EnetPeer.EnqueueOperation (System.Collections.Generic.Dictionary`2 parameters, Byte opCode, Boolean sendReliable, Byte channelId, Boolean encrypt, EgMessageType messageType) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.PeerBase.EnqueueOperation (System.Collections.Generic.Dictionary`2 parameters, Byte opCode, Boolean sendReliable, Byte channelId, Boolean encrypted) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.PhotonPeer.OpCustom (Byte customOpCode, System.Collections.Generic.Dictionary`2 customOpParameters, Boolean sendReliable, Byte channelId, Boolean encrypt) [0x00000] in <filename unknown>:0 
-  at ExitGames.Client.Photon.LoadbalancingPeer.OpRaiseEvent (Byte eventCode, System.Object customEventContent, Boolean sendReliable, .RaiseEventOptions raiseEventOptions) [0x00000] in <filename unknown>:0 
-  at NetworkingPeer.OpRaiseEvent (Byte eventCode, System.Object customEventContent, Boolean sendReliable, .RaiseEventOptions raiseEventOptions) [0x00000] in <filename unknown>:0 
-  at NetworkingPeer.RunViewUpdate () [0x00000] in <filename unknown>:0 
-  at PhotonHandler.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
 
 SpawnMyPlayer
  
