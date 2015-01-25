@@ -53,7 +53,9 @@ public class NetworkManager : MonoBehaviour {
 
 		Transform spawnPoint = spawnPoints[PhotonNetwork.playerList.Length - 1];
 		GameObject myPlayerObject = PhotonNetwork.Instantiate (playerPrefabName, spawnPoint.position, spawnPoint.rotation, 0);
+
 		myPlayerObject.layer = spawnPoint.gameObject.layer;
+		gameObject.layer = myPlayerObject.layer;
 
 		if (SpawnedMyPlayer != null) {
 			SpawnedMyPlayer( myPlayerObject );
@@ -70,6 +72,7 @@ public class NetworkManager : MonoBehaviour {
 		Transform spawnPoint = spawnPoints[i];
 		GameObject myPlayerObject = PhotonNetwork.Instantiate (playerPrefabName, spawnPoint.position, spawnPoint.rotation, 0);
 		myPlayerObject.layer = spawnPoint.gameObject.layer;
+		gameObject.layer = myPlayerObject.layer;
 		
 		if (SpawnedMyPlayer != null) {
 			SpawnedMyPlayer( myPlayerObject );

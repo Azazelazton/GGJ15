@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Physics Platformer Kit\Scripts\LockedStairs.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Button\BoxButton.cs">
     <Files>
-      <File FileName="Assets\Physics Platformer Kit\Scripts\ButtonLocked.cs" Line="10" Column="92" />
-      <File FileName="Assets\Physics Platformer Kit\Scripts\NetworkManager.cs" Line="14" Column="40" />
-      <File FileName="Assets\Physics Platformer Kit\Scripts\AnimationLock.cs" Line="21" Column="2" />
-      <File FileName="Assets\Physics Platformer Kit\Scripts\LockedStairs.cs" Line="16" Column="2" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\ButtonLocked.cs" Line="15" Column="8" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\NetworkManager.cs" Line="54" Column="73" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\AnimationLock.cs" Line="13" Column="39" />
+      <File FileName="Assets\Physics Platformer Kit\Scripts\LockedStairs.cs" Line="5" Column="5" />
+      <File FileName="Assets\Stair\StepAnim.cs" Line="42" Column="20" />
+      <File FileName="Assets\Button\BoxButton.cs" Line="57" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

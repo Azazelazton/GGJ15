@@ -17,7 +17,7 @@ Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Me\Documents\GitHub\GGJ15\BoxBoy\BoxBoy_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.049 seconds
+- Completed reload, in  0.046 seconds
 desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -31,13 +31,23 @@ OnJoinedLobby
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-OnPhotonRandomJoinFailed
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
 OnJoinedRoom
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnMyPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 2.407685 ms
+PhotonView register is ignored, because viewID is 0. No id assigned yet to: View (0)0 on DoorAnimation (scene)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 655.
+Total: 1.109331 ms (FindLiveObjects: 0.035922 ms CreateObjectMapping: 0.011118 ms MarkObjects: 0.317318 ms  DeleteObjects: 0.017961 ms)
 
 SpawnMyPlayer
  

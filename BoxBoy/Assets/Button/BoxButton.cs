@@ -54,7 +54,7 @@ public class BoxButton : MonoBehaviour {
 		if (!objectsAbove.Contains(collision.gameObject)) 
 			objectsAbove.Add(collision.gameObject);
 
-		if (!activated){
+		if (!activated && objectsAbove.Count == 1){
 			this.activated = true;
 			if (Pushed != null) 
 				Pushed ();
